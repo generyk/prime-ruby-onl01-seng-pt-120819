@@ -1,9 +1,5 @@
 def prime?(number)
-  return false if number <= 1
-  if number > 1 
-  elsif number/number == Integer 
-    return true 
-  else
-    return false 
-  end 
-end 
+  start = 2
+  if number > 1
+    range = (start..number-1).to_a
+    range.none? do |num_to_test|
